@@ -1,0 +1,4 @@
+.vscode/
+__pycache__/
+*.pyc
+30-Days-Of-Python-master/
