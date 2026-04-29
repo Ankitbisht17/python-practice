@@ -1,5 +1,5 @@
-# name = input("enter your name: ");
-# print("hello, "+ name +"! world");
+name = input("enter your name: ");
+print("hello, "+ name +"! world");
 
 
 
