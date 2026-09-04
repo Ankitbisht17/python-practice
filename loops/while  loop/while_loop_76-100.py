@@ -22,6 +22,8 @@
  
 # Q81..Write a program to check weather the given number is spy number or not 
 # i.e, 1*2*3=1+2+3 
+num=int(input('enter the number: '))
+
      
  
 # Q82.Write a program to check weather the given number is Xylem number or 

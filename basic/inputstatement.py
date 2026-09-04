@@ -20,6 +20,3 @@
 # a = eval(input('enter a list :') )
 # print(a)
 # print(type(a))
-
-
-

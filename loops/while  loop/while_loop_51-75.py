@@ -141,48 +141,122 @@
 # Q61.Write a program to get the following output 
 #        input=[‘jiocinema.com’ , ’file.py’ , ‘web.html’] 
 #        output=[‘com’ , ’py’ , ‘html’] 
+# lst=eval(input('enter the list: '))
+# i=0
+# output=[]
+# while i<len(lst):
+#     a=lst[i].split('.')
+#     b=a[-1]
+#     output.append(b)
+#     i+=1
+# print(output)        
  
          
 # Q62.Write a program to get the following output 
 #        input=[‘jiocinema.com’ , ’file.py’ , ‘web.html’ , ‘amazon.com’ , ‘text.py’] 
 #        output={‘com’:[‘jiocinema’ , ‘amazon’] , ’py’:[ ‘file’ , ‘text’] 
 # ,  ‘html’:[‘web’]} 
+
+# lst=eval(input('enter the list: '))
+# output={}
+# i=0
+# while i<len(lst):
+#     a=lst[i].split('.')
+#     b=a[-1]
+#     if b in output:
+#         output[b].append(a[0])
+#     else:
+#         output[b]=[a[0]]
+#     i+=1
+# print(output)
+
          
 # Q63.Write a program to get the following output(count no of vowels) 
 #        input=’hai hello’ 
 #        output={‘hai’:2 , ‘hello’:2} 
  
+# char=input('enter the character of your choice ')
+# output={}
+# b=char.split()
+# i=0
+# count=0
+# while i<len(b):
+#     word=b[i]
+#     count=0
+#     j=0
+#     while j<len(word):
+#         if word[j] in 'AEIOUaeiou':
+#             count+=1
+#         j+=1
+#     output[word]=count
+#     i+=1
+# print(output)
+
+
 # Q64.Write a program to extract all the string values present in the list collection 
 # only if the last character is upper case. Concatenate the extracted output using 
 # ‘*’ 
-         
+# lst = eval(input('enter the list of your choice: '))
+# output=''
+# i=0
+# while i<len(lst):
+#     a=lst[i]
+#     if isinstance(a,str):
+#         if a[-1].isupper():
+#             output+=a+'**'
+#     i+=1
+# print(output)
  
 # Q65.write a program to extract all the list data items present in list collection 
 # only if it is having middle value , that value is integer and having even number 
 # at start 
-         
+# lst = eval(input('enter the list of your choice: '))
+# output = []
+# i = 0
+# while i < len(lst):
+#     if i == len(lst) // 2:
+#         if isinstance(lst[i], int):
+#             if lst[i] % 2 == 0:
+#                 output.append(lst[i])
+#     i += 1
+# print(output)
+
+
  
 # Q66.Write a program to get the following output 
 #        input= ‘just looking like wow’ 
 #        output= ‘jusT LOOKING Like a wow’ 
-    
+
+
+
 # Q67.Program to find the common elements in two sets using a while loop 
 # set1 = {1, 2, 3, 4, 5} 
 # set2 = {3, 4, 5, 6, 7} 
  
+
+
  
 # Q68.Program to check if a number is a perfect number or not using while loop 
  
+
 # Q69.Program to find the length of the longest substring without repeating 
 # characters in a given string using while loop 
  
+
+
  
 # Q72.Program to find the maximum and minimum elements in a tuple using while 
 # loop 
  
+
+
 # Q73.Program to find the union, intersection, and difference of two sets using while 
 # loop 
+
+
 # Q74.Program to count the number of occurrences of each character in a string using 
 # a dictionary and while loop 
+
+
  
 # Q75.Write a program to remove duplicate value from collection without converting to set
