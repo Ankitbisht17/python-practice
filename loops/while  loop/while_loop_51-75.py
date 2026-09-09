@@ -225,23 +225,51 @@
  
 # Q66.Write a program to get the following output 
 #        input= ‘just looking like wow’ 
-#        output= ‘jusT LOOKING Like a wow’ 
+#        output= ‘jusT LOOKING Like a wow’  
 
-
-
-# Q67.Program to find the common elements in two sets using a while loop 
-# set1 = {1, 2, 3, 4, 5} 
-# set2 = {3, 4, 5, 6, 7} 
- 
-
-
+# st1 = {1, 2, 3, 4, 5}
+# st2 = {3, 4, 5, 6, 7}
+# st3 = []
+# a = list(st1)
+# i = 0
+# while i < len(a):
+#     if a[i] in st2:
+#         st3.append(a[i])
+#     i += 1
+# print(st3)
  
 # Q68.Program to check if a number is a perfect number or not using while loop 
+# num = int(input("Enter a number: "))
+# sum = 0
+# i = 1
+# while i <num:
+#     if num%i==0:
+#         sum += i
+#     i+=1
+# if sum == num:
+#     print("Perfect number")
+# else:
+#     print("Not a perfect number")
  
 
 # Q69.Program to find the length of the longest substring without repeating 
 # characters in a given string using while loop 
  
+s = input("Enter a string: ")
+current = ""
+max_len = 0
+i = 0
+while i < len(s):
+    if s[i] in current:
+        while s[i] in current:
+            current = current[1:]
+        current += s[i]
+    else:
+        current += s[i]
+    if len(current) > max_len:
+        max_len = len(current)
+    i += 1
+print(max_len)
 
 
  
